@@ -222,7 +222,7 @@ public class RCodeInfo {
 
         StringBuilder hexString = new StringBuilder(2 * length);
         for (int i = 0; i < length; i++) {
-            hexString.append(String.format("%X", buf[i]));
+            hexString.append(String.format("%02X", buf[i]));
         }
 
         return hexString.toString();
