@@ -50,6 +50,7 @@ stage('Full tests') {
     unstash name: 'junit-10.2-64-Linux'
     unstash name: 'junit-11.6-Linux'
     unstash name: 'junit-11.7-Linux'
+    unstash name: 'junit-12.0-Linux'
     sh "mkdir junitreports"
     unzip zipFile: 'junitreports-10.2-Win.zip', dir: 'junitreports'
     unzip zipFile: 'junitreports-11.7-Win.zip', dir: 'junitreports'
@@ -57,6 +58,7 @@ stage('Full tests') {
     unzip zipFile: 'junitreports-10.2-64-Linux.zip', dir: 'junitreports'
     unzip zipFile: 'junitreports-11.6-Linux.zip', dir: 'junitreports'
     unzip zipFile: 'junitreports-11.7-Linux.zip', dir: 'junitreports'
+    unzip zipFile: 'junitreports-12.0-Linux.zip', dir: 'junitreports'
     junit 'junitreports/**/*.xml'
   }
 }
