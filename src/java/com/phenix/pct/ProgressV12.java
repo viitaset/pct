@@ -30,17 +30,17 @@ public class ProgressV12 implements ProgressProcedures {
 
     @Override
     public String getIncrementalProcedure() {
-        return "pct/v11/silentIncDump.p";
+        return "pct/v12/silentIncDump.p";
     }
 
     @Override
     public String getDumpUsersProcedure() {
-        return "pct/v11/dmpUsers.p";
+        return "pct/v12/dmpUsers.p";
     }
 
     @Override
     public String getLoadUsersProcedure() {
-        return "pct/v11/loadUsers.p";
+        return "pct/v12/loadUsers.p";
     }
 
     @Override
@@ -50,12 +50,12 @@ public class ProgressV12 implements ProgressProcedures {
 
     @Override
     public String getLoadMultipleTablesDataProcedure() {
-        return "pct/loadData1.p";
+        return "pct/v12/loadData1.p";
     }
 
     @Override
     public String getLoadSingleTableDataProcedure() {
-        return "pct/v11/loadData2.p";
+        return "pct/v12/loadData2.p";
     }
 
     @Override
