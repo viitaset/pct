@@ -1119,7 +1119,6 @@ public class PCTCompileExtTest extends BuildFileTestNg {
     @Test(groups = {"v10"})
     public void test70() {
         configureProject(BASEDIR + "test70/build.xml");
-        executeTarget("init");
         executeTarget("test");
         assertTrue(new File(BASEDIR + "test70/build/test1.r").exists());
         assertTrue(new File(BASEDIR + "test70/build/.pct/test1.p.xref").exists());
