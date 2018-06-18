@@ -401,6 +401,8 @@ END.
 
 RUN pct/v11/_dmpincr114.p.
 
+MESSAGE SUBSTITUTE("MFE &1 - &2", del-df-file, return-value).
+ 
 IF     del-df-file
    AND RETURN-VALUE MATCHES "*SEEK=*"
    AND INT64(REPLACE(RETURN-VALUE,"SEEK=","")) EQ 0
