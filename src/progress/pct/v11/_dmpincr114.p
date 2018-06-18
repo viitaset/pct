@@ -2777,8 +2777,10 @@ OUTPUT CLOSE.
           RUN "prodict/dump/_dmpdefs.p" ("o",0, c).
       END.
   END.
+message substitute("MFE2 '&1'", ddl[1]).
 
   ASSIGN  iSeek = SEEK(ddl).
+message substitute("MFE3 '&1'", iSeek).
 
   {prodict/dump/dmptrail11.i
     &entries      = "IF dumpPol THEN PUT STREAM ddl UNFORMATTED
